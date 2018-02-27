@@ -83,7 +83,7 @@ class Employer {
     return store.meals.filter(meal=>{
       if (newdeliveries.includes(meal.id)){return meal}
     })
-  }
+  })
 }
 
   mealTotals(){//WILL USING MEALS() and EMPLOYEES() RETURN VALUE WORK??
