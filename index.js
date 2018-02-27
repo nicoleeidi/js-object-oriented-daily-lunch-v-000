@@ -73,7 +73,7 @@ class Employer {
     let customerids=newcustomers.map(function(customer){return customer.id}) // this step is different.
     return store.deliveries.filter(function(delivery){
       if (customerids.includes(delivery.customerId)){return delivery}
-    }
+    })
 }
   meals(){ //goes through customers then deliveries then meals
     let newcustomers=store.customers.filter(customer=>{return customer.employerId===this.id})
