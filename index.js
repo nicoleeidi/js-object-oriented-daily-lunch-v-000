@@ -56,6 +56,7 @@ class Delivery {
     this.id=++id3
     this.customerId=customer.id
     this.mealId=meal.id
+    store.deliveries.push(this)
   }
   customer(){return store.customers.find(customer=>return customer.id===this.customerId)}
   meal(){return store.meals.find(meal=>return meal.id===this.mealId)}
