@@ -45,7 +45,7 @@ class Meal {
   }
   static byPrice(){
     const mealsCopy= [...meals]
-    mealsCopy.sort(meal1,meal2){
+    mealsCopy.sort{function(meal1,meal2)
       meal1.price-meal2.price
     }
   }
