@@ -45,9 +45,9 @@ class Meal {
   }
   static byPrice(){
     const mealsCopy= [...meals]
-    mealsCopy.sort{function(meal1,meal2)
+    mealsCopy.sort(function(meal1,meal2){
       meal1.price-meal2.price
-    }
+    })
   }
 }
 let id3=0
