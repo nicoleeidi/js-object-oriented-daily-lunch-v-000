@@ -33,6 +33,7 @@ class Meal {
     this.title=title
     this.price=price
     this.id=++id2
+    store.meals.push(this)
   }
   deliveries(){return store.deliveries.filter(function(delivery){return delivery.mealId===this.id})}
   customers(){
