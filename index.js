@@ -87,7 +87,7 @@ class Employer {
 }
 
   mealTotals(){//WILL USING MEALS() and EMPLOYEES() RETURN VALUE WORK??
-    object={}
+    let object={}
     meals().forEach(function(meal){
       let customerids= employees().map(function(customer){return customer.id})
       let deliveriesForEmployersCustomers= store.deliveries.filter(delivery=>{
