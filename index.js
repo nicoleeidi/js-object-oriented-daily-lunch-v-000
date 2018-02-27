@@ -5,6 +5,7 @@ class Customer {
     this.name=name
     this.id=++id1
     this.employerId=employer.id
+    store.customers.push(this)
   }
   meals(){
     let newdeliveries=store.deliveries.filter(dilevery=>{return delivery.customerId===this.id})
@@ -26,9 +27,9 @@ class Customer {
 //   return meals.reduce(function(agg,el,i,arr){return agg + el.price},0)
 // }
 }
+let id2=0
 class Meal {
-  let id2=0
-  constructor(title,price){
+    constructor(title,price){
     this.title=title
     this.price=price
     this.id=++id2
