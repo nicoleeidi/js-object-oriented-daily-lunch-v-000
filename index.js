@@ -58,8 +58,8 @@ class Delivery {
     this.mealId=meal.id
     store.deliveries.push(this)
   }
-  customer(){store.customers.find(customer=>return customer.id===this.customerId)}
-  meal(){store.meals.find(meal=>return meal.id===this.mealId)}
+  customer(){store.customers.find(customer=>customer.id===this.customerId)}
+  meal(){store.meals.find(meal=>meal.id===this.mealId)}
 }
 let id4=0
 class Employer {
