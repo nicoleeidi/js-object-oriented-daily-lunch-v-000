@@ -33,7 +33,7 @@ class Meal {
     this.price=price
     this.id=++id2
   }
-  deliveries(){return store.deliveries.filter(dilevery=>{return delivery.mealId===this.id})}
+  deliveries(){return store.deliveries.filter(function(delivery){return delivery.mealId===this.id})}
   customers(){
     let newdeliveries=store.deliveries.filter(delivery=>{return delivery.mealId===this.id})
     let customerids=newdeliveries.map(function(delivery){return delivery.customerId})
