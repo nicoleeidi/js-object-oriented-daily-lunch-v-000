@@ -94,7 +94,7 @@ class Employer {
         if (customerids.includes(delivery.customerId)){return delivery}
       })
       let count=0
-      value= deliveriesForEmployersCustomers.forEach(function(delivery{
+      value= deliveriesForEmployersCustomers.forEach(function(delivery){
         if (delivery.mealId===meal.id){count+=1}
       }))
       object[meal.id]= count
