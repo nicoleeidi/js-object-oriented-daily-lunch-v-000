@@ -1,6 +1,6 @@
 let store= {customers:[],meals:[],deliveries:[]}
+let id1=0
 class Customer {
-  let id1=0
   constructor(name,employer){
     this.name=name
     this.id=++id1
